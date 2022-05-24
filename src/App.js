@@ -1,11 +1,22 @@
-import React from 'react';
+import React from "react";
+import Header from "./components/Header";
+import GlobalStyle from './globals';
+import LandingPage from './components/LandingPage';
 
-function App() {
+
+const App = () => {
   return (
-    <div>
-      App Placeholder
-    </div>
+		<>
+			<GlobalStyle />
+		  <Header />
+		  <div>
+		  <LandingPage />
+		  </div>
+		</>
   );
 }
 
+
+
 export default App;
+ 

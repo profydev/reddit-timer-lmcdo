@@ -1,0 +1,7 @@
+{
+    
+    "extends": ["prettier"],
+    "plugins":["cypress"],
+    "env": {"cypress/globals": true}
+    
+}
