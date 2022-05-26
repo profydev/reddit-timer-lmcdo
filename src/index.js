@@ -5,12 +5,12 @@ import App from './App';
 
 // eslint-disable-next-line react/jsx-filename-extension
 ReactDOM.render(
-	<BrowserRouter>
-		<Routes>
-			<Route path="/" element={<App />}>
-				<Route path="search"> </Route>
-			</Route>
-		</Routes>
-	</BrowserRouter>,
-	document.getElementById("root")
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />}>
+        <Route path="search"> </Route>
+      </Route>
+    </Routes>
+  </BrowserRouter>,
+  document.getElementById('root'),
 );
