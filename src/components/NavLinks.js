@@ -5,8 +5,7 @@
 	import redditLogo from "../assets/logo.svg";
     import Hamburger from "hamburger-react";
 
-
-const NavStyle = styled.div`
+const Header = styled.header`
     width:100%;     
     display: flex;
     justify-content:flex-end;
@@ -25,7 +24,7 @@ const NavStyle = styled.div`
     };
     return (
 		<>
-			<NavStyle>
+			<Header>
 				<LogoDiv>
 					<StyledLink to="/">
 						<Logo src={redditLogo} alt="logo" />
@@ -37,12 +36,12 @@ const NavStyle = styled.div`
 					</Li>
 					<Li ref={howItWorksClickRef}>
 						<StyledLink
-							to="/#howItWorks"
+							to="/#how-it-works"
 							onClick={() => {
 								handleScroll(howItWorksClickRef.current);
 							}}
 						>
-							How It Works
+							How it works
 						</StyledLink>
 					</Li>
 					<Li ref={aboutOnClickRef}>
@@ -57,7 +56,7 @@ const NavStyle = styled.div`
 					</Li>
 				</Ul>
 				<Hamburger toggled={isOpen} toggle={setOpen} />
-			</NavStyle>
+			</Header>
 		</>
 	);
 }

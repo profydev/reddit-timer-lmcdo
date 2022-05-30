@@ -12,9 +12,10 @@ const Nav = styled.div`
 
 export default function NavBar() {  
     return (
-		<Nav>
-			<MobileNav />
+		<Nav>			
 			<DesktopNav />
+			<MobileNav />
+				
 		</Nav>
 	);
 };

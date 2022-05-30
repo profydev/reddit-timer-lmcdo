@@ -27,9 +27,7 @@
 		"format": "eslint --fix .",
 		"cypress": "cross-env TZ=Europe/Berlin cypress run",
 		"cypress:open": "cross-env TZ=Europe/Berlin npx cypress open",
-		"prepare": "husky install",
-		"storybook": "start-storybook -p 6006 -s public",
-		"build-storybook": "build-storybook -s public"
+		"prepare": "husky install"
 	},
 	"browserslist": {
 		"production": [
