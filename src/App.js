@@ -4,6 +4,7 @@ import LandingPage from './components/LandingPage';
 import Search from  './components/Search'
 import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer";
 
 export default function App() {
 	 //represents main section
@@ -11,16 +12,18 @@ export default function App() {
 	const howToUseRef = useRef(null); 
 	return (
 		<>
-		<Router>
-			<GlobalStyle />
-			<NavBar />
-			<GlobalStyle />
-			<Routes>
-				<Route path={"/"} element={<LandingPage />} />
-				<Route path={"/#howItWorks"} element={<LandingPage />} />
-				<Route path={"/#about"} element={<LandingPage />} />
-				<Route path="search/javascript" element={<Search />} />
-			</Routes>
+			<Router>
+				<GlobalStyle />
+				<NavBar />
+				<GlobalStyle />
+				<Routes>
+					<Route path={"/"} element={<LandingPage />} />
+					<Route path={"/#howItWorks"} element={<LandingPage />} />
+					<Route path={"/#about"} element={<LandingPage />} />
+					<Route path={"/terms"} element={<Footer />} />
+					<Route path="search/javascript" element={<Search />} />
+				</Routes>
+				<Footer />
 			</Router>
 		</>
 	);

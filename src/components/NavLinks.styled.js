@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 
 export const LogoDiv = styled.div`
-flex: 1;
+	flex: 1;
 	justify-content: flex-start;
 	cursor: pointer;
 `;
@@ -38,6 +38,7 @@ export const StyledLink = styled(Link)`
 	cursor: pointer;
 `;
 
+
 export const Logo = styled.img`
 	display: inline;
 	justify-content: flex-start;
@@ -47,3 +48,23 @@ export const Logo = styled.img`
 	padding-left: 80px;
 `;
 
+export const FooterLogo  = styled.img`
+	display: inline;
+	width: 149px;
+	height: 36px;
+	padding-top: 0px;
+	padding-left: 0px;
+`;
+
+
+export const FooterNav = styled.footer`
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	height: 20px;
+`;

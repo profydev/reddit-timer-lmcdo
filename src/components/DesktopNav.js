@@ -9,7 +9,6 @@ const DesktopNavStyle = styled.nav`
 	height: 100vh;
 	display: flex;
 	flex-direction: row;
-
 `;
 
 export default function DesktopNav() {
