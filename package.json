@@ -9,7 +9,6 @@
 		"@testing-library/react": "^11.2.2",
 		"@testing-library/user-event": "^12.0.11",
 		"hamburger-react": "^2.5.0",
-		"prettier": "^2.6.2",
 		"prop-types": "^15.8.1",
 		"react": "^17.0.1",
 		"react-dom": "^17.0.1",
@@ -19,15 +18,15 @@
 		"styled-components": "^5.3.5"
 	},
 	"scripts": {
-		"start": "react-scripts --openssl-legacy-provider start",
+		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"lint": "eslint --no-error-on-unmatched-pattern .",
 		"format": "eslint --fix .",
 		"cypress": "cross-env TZ=Europe/Berlin cypress run",
 		"cypress:open": "cross-env TZ=Europe/Berlin npx cypress open",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"production": "NODE_OPTIONS=--openssl-legacy-provider"
 	},
 	"browserslist": {
 		"production": [
@@ -52,37 +51,9 @@
 		"@storybook/testing-library": "^0.0.11",
 		"cross-env": "^7.0.3",
 		"cypress": "^6.1.0",
-		"eslint": "^7.15.0",
-		"eslint-config-airbnb": "^18.2.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-cypress": "^2.12.1",
-		"eslint-plugin-import": "^2.22.0",
-		"eslint-plugin-jsx-a11y": "^6.3.1",
-		"eslint-plugin-react": "^7.20.3",
-		"eslint-plugin-react-hooks": "^4.0.6",
 		"husky": "^5.1.3"
 	},
 	"optionalDependencies": {
 		"babel-loader": "8.1.0"
-	},
-	"eslintConfig": {
-		"overrides": [
-			{
-				"files": [
-					"**/*.stories.*"
-				],
-				"rules": {
-					"import/no-anonymous-default-export": "off"
-				}
-			},
-			{
-				"files": [
-					"**/*.stories.*"
-				],
-				"rules": {
-					"import/no-anonymous-default-export": "off"
-				}
-			}
-		]
 	}
 }
