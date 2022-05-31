@@ -1,8 +1,7 @@
-import React from "react";
-import "@fontsource/montserrat";
-import styled from "styled-components";
-import NavLinks from "./NavLinks";
-
+import React from 'react';
+import '@fontsource/montserrat';
+import styled from 'styled-components';
+import NavLinks from './NavLinks';
 
 const DesktopNavStyle = styled.nav`
 	width: 100%;
@@ -13,11 +12,11 @@ const DesktopNavStyle = styled.nav`
 `;
 
 export default function DesktopNav() {
-	return (
-		<>
-			<DesktopNavStyle>
-				<NavLinks />
-			</DesktopNavStyle>
-		</>
-	);
+  return (
+    <>
+      <DesktopNavStyle>
+        <NavLinks />
+      </DesktopNavStyle>
+    </>
+  );
 }

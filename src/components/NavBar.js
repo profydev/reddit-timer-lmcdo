@@ -1,5 +1,5 @@
-import "@fontsource/montserrat";
-import styled from "styled-components";
+import '@fontsource/montserrat';
+import styled from 'styled-components';
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 
@@ -10,12 +10,12 @@ const Nav = styled.div`
 	height: 100px;
 `;
 
-export default function NavBar() {  
-    return (
-		<Nav>			
-			<DesktopNav />
-			<MobileNav />
-				
-		</Nav>
-	);
-};
+export default function NavBar() {
+  return (
+    <Nav>
+      <DesktopNav />
+      <MobileNav />
+
+    </Nav>
+  );
+}

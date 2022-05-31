@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 export const LogoDiv = styled.div`
 flex: 1;
@@ -46,4 +45,3 @@ export const Logo = styled.img`
 	padding-top: 32px;
 	padding-left: 80px;
 `;
-

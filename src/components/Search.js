@@ -1,5 +1,3 @@
-const Search = () => {
-    return ( "Search" );
-}
- 
+const Search = () => ('Search');
+
 export default Search;
